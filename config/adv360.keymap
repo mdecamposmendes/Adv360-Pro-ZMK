@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                            &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                             &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 4    &kp LCTRL           &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                 &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &hm LEFT_SHIFT TAB  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&none    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &tog 1                                                                         &mo 3               &kp N6  &kp N7    &kp N8        &kp N9          &kp N0     &none
+&none    &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                                          &none               &kp Y   &kp U     &kp I         &kp O           &kp P      &none
+&kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &none     &kp LCTRL           &kp LALT        &kp LGUI   &kp RCTRL             &none               &kp H   &kp J     &kp K         &kp L           &kp SEMI   &none
+&none    &kp Z   &kp X   &kp C   &kp V   &kp B                                 &kp LC(C)       &kp PG_UP                                            &kp N   &kp M     &lt 4 M       &kp DOT         &kp FSLH   &none
+&mo 2    &none   &none   &none   &none           &kp BSPC  &hm LEFT_SHIFT TAB  &kp ESCAPE      &kp PG_DN  &mt LEFT_SHIFT ENTER  &mt LEFT_WIN SPACE          &kp LEFT  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT  &mo 2
             >;
         };
 
@@ -74,13 +74,13 @@
             >;
         };
 
-        layer_Layer__4 {
+        brackets {
             bindings = <
-&trans  &trans  &trans                &trans             &trans                 &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_BRACE        &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_PARENTHESIS  &kp SINGLE_QUOTE   &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_BRACKET      &kp UNDERSCORE     &kp RIGHT_BRACKET      &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                &trans             &trans                         &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans             &trans                &trans                 &trans         &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UNDER  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp MINUS  &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE  &kp GRAVE          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans             &trans                &trans                                &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
