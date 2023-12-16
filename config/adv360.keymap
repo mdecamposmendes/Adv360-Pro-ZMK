@@ -40,7 +40,7 @@
             bindings = <
 &none    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5  &tog 1                                                                         &mo 3               &kp N6  &kp N7        &kp N8     &kp N9   &kp N0    &none
 &none    &kp Q   &kp W   &kp E     &kp R      &kp T   &none                                                                          &none               &kp Y   &mt de_ue U         &kp I      &mt de_oe O    &kp P     &none
-&kp ESC  &mt de_ae A   &kp S   &kp D     &kp F      &kp G   &none     &kp LCTRL           &kp LALT        &kp LGUI   &kp RCTRL             &none               &kp H   &kp J         &kp K      &kp L    &kp SEMI  &none
+&kp ESC  &mt de_ae A   &mt de_eszett S   &kp D     &kp F      &kp G   &none     &kp LCTRL           &kp LALT        &kp LGUI   &kp RCTRL             &none               &kp H   &kp J         &kp K      &kp L    &kp SEMI  &none
 &none    &kp Z   &kp X   &kp C     &lt 4 V    &kp B                                 &kp LC(C)       &kp PG_UP                                            &kp N   &lt 4 M       &kp COMMA  &kp DOT  &kp FSLH  &none
 &mo 2    &none   &none   &kp LEFT  &kp RIGHT          &kp BSPC  &hm LEFT_SHIFT TAB  &kp ESCAPE      &kp PG_DN  &mt LEFT_SHIFT ENTER  &mt LEFT_WIN SPACE          &kp UP_ARROW  &kp DOWN   &none    &none     &mo 2
             >;
