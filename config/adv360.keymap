@@ -50,11 +50,11 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         #endif
 
         #ifndef HOMEY_STREAK_DECAY
-        #define HOMEY_STREAK_DECAY 230
+        #define HOMEY_STREAK_DECAY 150
         #endif
 
         #ifndef SHIFT_HOLDING_TYPE
-        #define SHIFT_HOLDING_TYPE "tap-preferred"
+        #define SHIFT_HOLDING_TYPE "balanced"
         #endif
 
         #ifndef SHIFT_HOLDING_TIME
@@ -143,8 +143,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             flavor =
             SHIFT_HOLDING_TYPE;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-
-            //hold-trigger-on-release; // don't wait for other mods
+            hold-trigger-on-release; // wait for other mods
 
             tapping-term-ms = <SHIFT_HOLDING_TIME>;
             require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
@@ -158,8 +157,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             flavor =
             SHIFT_HOLDING_TYPE;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
-
-            //hold-trigger-on-release; // don't wait for other mods
+            hold-trigger-on-release; // wait for other mods
 
             tapping-term-ms = <SHIFT_HOLDING_TIME>;
             require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
