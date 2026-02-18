@@ -255,7 +255,7 @@
         umlaute {
             bindings = <
 &trans  &trans  &trans      &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &trans  &trans  &trans  &trans                                      &trans  &trans  &de_ue  &trans  &de_oe  &trans  &trans
+&trans  &trans  &trans      &euro_sign  &trans  &trans  &trans                                      &trans  &trans  &de_ue  &trans  &de_oe  &trans  &trans
 &trans  &de_ae  &de_eszett  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans      &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans      &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
