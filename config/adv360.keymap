@@ -46,15 +46,15 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         #endif
 
         #ifndef HOMEY_HOLDING_TIME
-        #define HOMEY_HOLDING_TIME 270 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
+        #define HOMEY_HOLDING_TIME 170
         #endif
 
         #ifndef HOMEY_STREAK_DECAY
-        #define HOMEY_STREAK_DECAY 150
+        #define HOMEY_STREAK_DECAY 80
         #endif
 
         #ifndef SHIFT_HOLDING_TYPE
-        #define SHIFT_HOLDING_TYPE "balanced"
+        #define SHIFT_HOLDING_TYPE "tap-preferred"
         #endif
 
         #ifndef SHIFT_HOLDING_TIME
@@ -62,7 +62,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         #endif
 
         #ifndef SHIFT_STREAK_DECAY
-        #define SHIFT_STREAK_DECAY 130
+        #define SHIFT_STREAK_DECAY 0
         #endif
 
         #ifndef PLAIN_HOLDING_TYPE
@@ -143,7 +143,8 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             flavor =
             SHIFT_HOLDING_TYPE;
             hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-            hold-trigger-on-release; // wait for other mods
+
+            //hold-trigger-on-release; // don't wait for other mods
 
             tapping-term-ms = <SHIFT_HOLDING_TIME>;
             require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
@@ -157,7 +158,8 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             flavor =
             SHIFT_HOLDING_TYPE;
             hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
-            hold-trigger-on-release; // wait for other mods
+
+            //hold-trigger-on-release; // don't wait for other mods
 
             tapping-term-ms = <SHIFT_HOLDING_TIME>;
             require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
@@ -208,7 +210,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
 &none  &kp N1                  &kp N2                  &kp N3               &kp N4                    &kp N5   &tog 1                                                                         &mo 3      &kp N6   &kp N7                     &kp N8                &kp N9                    &kp N0                            &none
 &none  &kp Q                   &kp W                   &kp E                &kp R                     &kp T    &none                                                                          &none      &kp Y    &kp U                      &kp I                 &kp O                     &kp P                             &none
-&none  &homey_left LEFT_WIN A  &homey_left LEFT_ALT S  &homey_left LCTRL D  &homey_left LEFT_SHIFT F  &kp G    &none     &kp LEFT_SHIFT      &kp LALT        &kp LGUI   &kp RIGHT_SHIFT       &none      &kp H    &homey_right LEFT_SHIFT J  &homey_right RCTRL K  &homey_right RIGHT_ALT L  &homey_right RIGHT_WIN SEMICOLON  &none
+&none  &homey_left LEFT_WIN A  &homey_left LEFT_ALT S  &homey_left LCTRL D  &shift_left LEFT_SHIFT F  &kp G    &none     &kp LEFT_SHIFT      &kp LALT        &kp LGUI   &kp RIGHT_SHIFT       &none      &kp H    &shift_right LEFT_SHIFT J  &homey_right RCTRL K  &homey_right RIGHT_ALT L  &homey_right RIGHT_WIN SEMICOLON  &none
 &none  &kp Z                   &kp X                   &kp C                &lt 4 V                   &lt 5 B                                &kp LC(C)       &kp PG_UP                                   &lt 5 N  &lt 4 M                    &kp COMMA             &kp DOT                   &kp FSLH                          &none
 &mo 2  &none                   &none                   &kp LEFT             &kp RIGHT                          &kp BSPC  &hm LEFT_SHIFT TAB  &kp ESCAPE      &kp PG_DN  &mt LEFT_SHIFT ENTER  &kp SPACE           &kp UP_ARROW               &kp DOWN              &none                     &none                             &mo 2
             >;
